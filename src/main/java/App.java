@@ -14,8 +14,8 @@ public class App {
             String power = request.queryParams("specialPower");
             String weakness = request.queryParams("weakness");
             MyHero newMember = new MyHero(name, age, power,weakness);
-            model.put("myheros", MyHero.getAll());
-            return new ModelAndView(model, "herosuccess.hbs");
+            model.put("hero", MyHero.getAll());
+            return new ModelAndView(model, "herosucess.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/heroform/new", (request, response) -> {
