@@ -45,6 +45,11 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "display.hbs");
         }, new HandlebarsTemplateEngine());
+        //Getting hero form
+        get("/herosform/new", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "heroform.hbs");
+        }, new HandlebarsTemplateEngine());
             //posting new squad
         post("/squads/new", (request, response) -> {
                     Map<String, Object> model = new HashMap<>();
