@@ -1,5 +1,12 @@
 import junit.framework.TestCase;
+import org.junit.Test;
 
-public class MySquadTest extends TestCase {
+import static org.junit.Assert.assertEquals;
 
+public class MySquadTest  {
+    @Test
+    public void checkWheatherItInstantiatesProperly() {
+        MySquad squad = new MySquad(10,"Justice League", "Fight Crime");
+        assertEquals(true, squad instanceof MySquad);
+    }
 }
