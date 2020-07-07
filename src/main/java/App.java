@@ -9,15 +9,10 @@ public class App {
     public static void main(String[] args){
 
         staticFileLocation("/public");
-        post("/heroform", (request, response) -> {
-            Map<String, Object> model = new HashMap<>();
-            String name = request.queryParams("name");
-            int age = Integer.parseInt(request.queryParams("age"));
-            String power = request.queryParams("specialPower");
-            String weakness = request.queryParams("weakness");
-            MyHero newMember = new MyHero(name, age, power,weakness);
-            model.put("heros", MyHero.getAll());
-            return new ModelAndView(model, "herosucess.hbs");
+        get("/", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
+
     }
 }
