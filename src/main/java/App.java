@@ -31,6 +31,15 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
+        //display Heroes
+
+        get("/receivedheroes", (req, res) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            ArrayList<MyHero> heroes = MyHero.getAll();
+            model.put("heroes", heroes);
+            return new ModelAndView(model, "displayheroes.hbs");
+        }, new HandlebarsTemplateEngine());
+
 
     }
 }
