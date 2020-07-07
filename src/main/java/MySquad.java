@@ -17,4 +17,6 @@ public class MySquad {
     public int getSize() {return size; }
 
     public String getSquadName() { return squadName;}
+
+    public String getPurpose() { return purpose; }
 }
