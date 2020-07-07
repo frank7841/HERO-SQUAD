@@ -45,6 +45,18 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "display.hbs");
         }, new HandlebarsTemplateEngine());
+            //posting new squad
+        post("/squads/new", (request, response) -> {
+                    Map<String, Object> model = new HashMap<>();
+                    String name = request.queryParams("squadName");
+                    String cause = request.queryParams("cause");
+                    int size=Integer.parseInt(request.queryParams("size"));
+                    MySquad newSquad = new MySquad(size,name, cause);
+                    model.put("squads", MySquad.getAll());
+                    return new ModelAndView(model, "success.hbs");
+                }, new HandlebarsTemplateEngine()
+        );
+
 
     }
 }
