@@ -40,6 +40,11 @@ public class App {
             return new ModelAndView(model, "displayheroes.hbs");
         }, new HandlebarsTemplateEngine());
 
+        //display hero details
+        get("/herosdetails", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "display.hbs");
+        }, new HandlebarsTemplateEngine());
 
     }
 }
