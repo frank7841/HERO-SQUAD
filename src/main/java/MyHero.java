@@ -20,4 +20,7 @@ public class MyHero {
 
     public String getSpecialPower() {return specialPower; }
 
+    public String getWeakness() {
+        return weakness;
+    }
 }
