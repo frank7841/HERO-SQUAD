@@ -13,4 +13,7 @@ public class MySquad {
         instances.add(this);
         this.id = instances.size();
     }
+
+    public int getSize() {return size; }
+
 }

@@ -14,4 +14,9 @@ public class MySquadTest  {
         MySquad squad = new MySquad(10,"Justice League", "Protect citizens");
         assertEquals(10, squad.getSize());
     }
+    @Test
+    public void getsSquadName() {
+        MySquad squad = new MySquad(10,"Justice League", "Protect citizens");
+        assertEquals(10, squad.getSquadName());
+    }
 }
