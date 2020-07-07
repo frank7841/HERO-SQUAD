@@ -11,12 +11,19 @@ public class MySquadTest  {
     }
     @Test
     public void getsSquadSize() {
-        MySquad squad = new MySquad(10,"Justice League", "Protect citizens");
+        MySquad squad = new MySquad(10,"Justice League", "Fight Crime");
         assertEquals(10, squad.getSize());
     }
     @Test
     public void getsSquadName() {
-        MySquad squad = new MySquad(10,"Justice League", "Protect citizens");
+        MySquad squad = new MySquad(10,"Justice League", "Fight Crime");
         assertEquals(10, squad.getSquadName());
     }
+    @Test
+    public void getsSquadPurpose() {
+        MySquad squad = new MySquad(10,"Justice League", "Fight Crime");
+        assertEquals(10, squad.getPurpose());
+    }
+
+
 }
