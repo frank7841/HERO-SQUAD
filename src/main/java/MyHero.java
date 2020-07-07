@@ -5,4 +5,12 @@ public class MyHero {
     private String specialPower;
     private String weakness;
     private static ArrayList<MyHero> instances = new ArrayList<>();
+
+    public MyHero(String name,int age, String specialPower, String weakness){
+        this.name = name;
+        this.age = age;
+        this.specialPower = specialPower;
+        this.weakness=weakness;
+        instances.add(this);
+    }
 }

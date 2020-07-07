@@ -3,7 +3,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class MyHeroTest extends TestCase {
+public class MyHeroTest  {
 
     @Test
     public void checkingWhetherItInstantiatesProperly() {
