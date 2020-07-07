@@ -16,31 +16,17 @@ public class MyHero {
         this.id = instances.size();
     }
 
-    public String getName() {
-        return name;
-    }
+    public String getName() { return name; }
 
-    public int getAge() {
-        return age;
-    }
+    public int getAge() {return age; }
 
-    public String getSpecialPower() {
-        return specialPower;
-    }
+    public String getSpecialPower() {return specialPower;}
 
-    public String getWeakness() {
-        return weakness;
-    }
+    public String getWeakness() {return weakness;}
 
-    public int getId() {
-        return id;
-    }
+    public int getId() {return id;}
 
-    public static ArrayList<MyHero> getAll() {
-        return instances;
-    }
+    public static ArrayList<MyHero> getAll() {return instances; }
 
-    public static MyHero findById(int id) {
-        return instances.get(id - 1);
-    }// since Array Index starts from 0
+    public static MyHero findById(int id) { return instances.get(id - 1);}// since Array Index starts from 0
 }

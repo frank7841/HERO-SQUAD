@@ -22,4 +22,5 @@ public class MySquad {
 
     public int getId() {return id;}
 
+    public static ArrayList<MySquad> getAll() {return instances;}
 }
