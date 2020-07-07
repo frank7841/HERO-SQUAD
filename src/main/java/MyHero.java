@@ -42,5 +42,5 @@ public class MyHero {
 
     public static MyHero findById(int id) {
         return instances.get(id - 1);
-    }
+    }// since Array Index starts from 0
 }
