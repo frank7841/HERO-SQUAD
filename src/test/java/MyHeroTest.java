@@ -13,21 +13,26 @@ public class MyHeroTest  {
     @Test
     public void getsNameInput() {
         MyHero hero = new MyHero("Batman", 27, "I am Batman", "Nothing");
-        assertEquals("Superman", hero.getName());
+        assertEquals("Batman", hero.getName());
     }
     @Test
     public void getAgeInput() {
         MyHero hero = new MyHero("Batman", 27, "I am Batman", "Nothing");
-        assertEquals("Superman", hero.getAge());
+        assertEquals("Batman", hero.getAge());
     }
     @Test
     public void getSpecialPowerInput() {
         MyHero hero = new MyHero("Batman", 27, "I am Batman", "Nothing");
-        assertEquals("Superman", hero.getSpecialPower());
+        assertEquals("Batman", hero.getSpecialPower());
     }
     @Test
     public void getWeaknessInput() {
         MyHero hero = new MyHero("Batman", 27, "I am Batman", "Nothing");
-        assertEquals("Superman", hero.getWeakness());
+        assertEquals("Batman", hero.getWeakness());
+    }
+    @Test
+    public void getInstaceId() {
+        MyHero hero = new MyHero("Batman", 27, "I am Batman", "Nothing");
+        assertEquals(1, hero.getId());
     }
 }

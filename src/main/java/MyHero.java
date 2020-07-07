@@ -5,6 +5,7 @@ public class MyHero {
     private String specialPower;
     private String weakness;
     private static ArrayList<MyHero> instances = new ArrayList<>();
+    private int id;
 
     public MyHero(String name,int age, String specialPower, String weakness){
         this.name = name;
@@ -12,6 +13,7 @@ public class MyHero {
         this.specialPower = specialPower;
         this.weakness=weakness;
         instances.add(this);
+        this.id = instances.size();
     }
 
     public String getName() { return name; }
@@ -20,7 +22,6 @@ public class MyHero {
 
     public String getSpecialPower() {return specialPower; }
 
-    public String getWeakness() {
-        return weakness;
-    }
+    public String getWeakness() { return weakness; }
 }
+
