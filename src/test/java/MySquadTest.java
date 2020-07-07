@@ -24,6 +24,11 @@ public class MySquadTest  {
         MySquad squad = new MySquad(10,"Justice League", "Fight Crime");
         assertEquals(10, squad.getPurpose());
     }
+    @Test
+    public void getsId() {
+        MySquad squad = new MySquad(10,"Justice League", "Fight Crime");
+        assertEquals(1, squad.getId());
+    }
 
 
 }
