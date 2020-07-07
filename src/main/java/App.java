@@ -19,5 +19,12 @@ public class App {
             return new ModelAndView(model, "squadform.hbs");
         }, new HandlebarsTemplateEngine());
 
+        get("/receivedsquad", (req, res) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            ArrayList<MySquad> squads = MySquad.getAll();
+            model.put("squads", squads);
+            return new ModelAndView(model, "display.hbs");
+        }, new HandlebarsTemplateEngine());
+
     }
 }
