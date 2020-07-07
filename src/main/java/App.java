@@ -6,15 +6,17 @@ import spark.template.handlebars.HandlebarsTemplateEngine;
 import static spark.Spark.*;
 public class App {
     public static void main(String[] args){
+        port(4567);
+
         staticFileLocation("/public");
-        post("/herosform/new", (request, response) -> {
+        post("/heroform/new", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             String name = request.queryParams("name");
             int age = Integer.parseInt(request.queryParams("age"));
             String power = request.queryParams("specialPower");
             String weakness = request.queryParams("weakness");
             MyHero newMember = new MyHero(name, age, power,weakness);
-            model.put("heros", MyHero.getAll());
+            model.put("myheros", MyHero.getAll());
             return new ModelAndView(model, "herosuccess.hbs");
         }, new HandlebarsTemplateEngine());
 
