@@ -13,6 +13,11 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
+        //Routing to new add new squad
+        get("/squads/new", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "squadform.hbs");
+        }, new HandlebarsTemplateEngine());
 
     }
 }
