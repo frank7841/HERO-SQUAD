@@ -25,5 +25,9 @@ public class MyHero {
     public String getWeakness() { return weakness; }
 
     public int getId() { return id; }
+
+    public static ArrayList<MyHero> getAll() {
+        return instances;
+    }
 }
 

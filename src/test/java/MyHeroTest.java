@@ -42,4 +42,10 @@ public class MyHeroTest  {
         assertEquals(true, MyHero.getAll().contains(heroflash));
         assertEquals(true, MyHero.getAll().contains(herobats));
     }
+    @Test
+    public void allHerosAreCorrectlyreturned() {
+        MyHero heroflash = new MyHero("Flash", 23, "Speed", "Love");
+        MyHero herobats = new MyHero("Batman", 26, "I am Batman", "Light");
+        assertEquals(2, MyHero.getAll().size());
+    }
 }
