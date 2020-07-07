@@ -23,4 +23,8 @@ public class MySquad {
     public int getId() {return id;}
 
     public static ArrayList<MySquad> getAll() {return instances;}
+
+    public static MySquad findById(int id){
+        return instances.get(id-1); //why minus 1? See if you can figure it out.
+    }
 }
