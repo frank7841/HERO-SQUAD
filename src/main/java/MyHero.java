@@ -17,4 +17,7 @@ public class MyHero {
     public String getName() { return name; }
 
     public int getAge() { return age; }
+
+    public String getSpecialPower() {return specialPower; }
+
 }
