@@ -18,12 +18,18 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "squadform.hbs");
         }, new HandlebarsTemplateEngine());
+        //view squad details
 
         get("/receivedsquad", (req, res) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             ArrayList<MySquad> squads = MySquad.getAll();
             model.put("squads", squads);
             return new ModelAndView(model, "display.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/success", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
 
     }
