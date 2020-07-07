@@ -29,6 +29,12 @@ public class MySquadTest  {
         MySquad squad = new MySquad(10,"Justice League", "Fight Crime");
         assertEquals(1, squad.getId());
     }
-
+    @Test
+    public void allSquadsContainSquads_true() {
+        MySquad group1 = new MySquad(10,"Justice League", "Protect citizens");
+        MySquad group2 = new MySquad(5, "Night Savers", "Fight corruption");
+        assertEquals(true, MySquad.getAll().contains(group1));
+        assertEquals(true, MySquad.getAll().contains(group2));
+    }
 
 }

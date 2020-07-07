@@ -19,4 +19,7 @@ public class MySquad {
     public String getSquadName() { return squadName;}
 
     public String getPurpose() { return purpose; }
+
+    public int getId() {return id;}
+
 }
