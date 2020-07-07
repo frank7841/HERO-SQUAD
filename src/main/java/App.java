@@ -6,8 +6,6 @@ import spark.template.handlebars.HandlebarsTemplateEngine;
 import static spark.Spark.*;
 public class App {
     public static void main(String[] args){
-        port(4567);
-
         staticFileLocation("/public");
         post("/heroform/new", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
@@ -19,6 +17,12 @@ public class App {
             model.put("myheros", MyHero.getAll());
             return new ModelAndView(model, "herosuccess.hbs");
         }, new HandlebarsTemplateEngine());
+
+        get("/heroform/new", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "heroform.hbs");
+        }, new HandlebarsTemplateEngine());
+
 
     }
 
