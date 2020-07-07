@@ -15,4 +15,9 @@ public class MyHeroTest  {
         MyHero hero = new MyHero("Batman", 27, "I am Batman", "Nothing");
         assertEquals("Superman", hero.getName());
     }
+    @Test
+    public void getAgeInput() {
+        MyHero hero = new MyHero("Batman", 27, "I am Batman", "Nothing");
+        assertEquals("Superman", hero.getName());
+    }
 }

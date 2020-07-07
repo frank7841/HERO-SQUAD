@@ -13,4 +13,9 @@ public class MyHero {
         this.weakness=weakness;
         instances.add(this);
     }
+
+    public String getName() {
+        return name;
+    }
+
 }
