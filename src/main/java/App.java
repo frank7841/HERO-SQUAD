@@ -70,6 +70,7 @@ public class App {
         //Post Hero Details
         post("/heroform/new", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
+            String sname = request.queryParams("squadName");
             String name = request.queryParams("name");
             int age = Integer.parseInt(request.queryParams("age"));
             String power = request.queryParams("specialPower");
