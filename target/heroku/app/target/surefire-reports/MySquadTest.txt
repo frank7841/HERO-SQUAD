@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: MySquadTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in MySquadTest
+Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in MySquadTest
 getsId(MySquadTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<1> but was:<2>
 	at MySquadTest.getsId(MySquadTest.java:30)

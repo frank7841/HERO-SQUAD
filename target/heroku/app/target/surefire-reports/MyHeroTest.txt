@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: MyHeroTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec <<< FAILURE! - in MyHeroTest
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.195 sec <<< FAILURE! - in MyHeroTest
 allHerosAreCorrectlyreturned(MyHeroTest)  Time elapsed: 0.007 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<2> but was:<3>
 	at MyHeroTest.allHerosAreCorrectlyreturned(MyHeroTest.java:49)
 
-getInstaceId(MyHeroTest)  Time elapsed: 0 sec  <<< FAILURE!
+getInstaceId(MyHeroTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<1> but was:<6>
 	at MyHeroTest.getInstaceId(MyHeroTest.java:36)
 
