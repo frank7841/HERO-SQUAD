@@ -1,0 +1,23 @@
+
+{{#partial "content"}}
+    <div class="col-md-6">
+        <h1>Hero list!</h1>
+        {{#if heroes}}
+            {{#each heroes}}
+                <div class="card">
+                    {{squadName}} Heroes
+                    <p>Current Hero</p>
+                    <p>Name: {{ name }}</p>
+                    <p>Age: {{ age }}</p>
+                    <p>Special power: {{ specialPower }}</p>
+                    <p>Weakness: {{ weakness }}</p>
+                </div>
+            {{/each}}
+        {{else}}
+            <p>No Heroes!</p>
+
+        {{/if}}
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}

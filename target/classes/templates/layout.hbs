@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Hero Squad{{/block}}</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link href="/images/app.css" rel="stylesheet">
+</head>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+<body>
+<ul class="nav nav-tabs text-center">
+    <li class="nav-item">
+        <a class="nav-link active" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/squads/new">Add a Squad</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/heroform/new">Add a Hero</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/receivedsquad">Squad Details</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/receivedheroes">Hero Details</a>
+    </li>
+</ul>
+
+<div class="container">
+    <div class="page-header">
+
+
+    </div>
+    <div class="col-md-12">
+        {{#block "content"}}
+        {{/block}}
+    </div>
+</div>
+{{#block "footer"}}
+    </body>
+    </html>
+{{/block}}
