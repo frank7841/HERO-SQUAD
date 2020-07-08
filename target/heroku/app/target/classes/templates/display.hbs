@@ -1,0 +1,50 @@
+{{#partial "content"}}
+    <div class = "row">
+        <div class="col-md-5"></div>
+
+        <div class="col-md-6">
+            <h1>Squad list!</h1>
+
+            {{#if squads}}
+                <p>Current squad</p>
+                {{#each squads}}
+                    <div class="card">
+                        <p>Name: {{ squadName }}</p>
+                        <p>Cause: {{ cause }}</p>
+                        <p>Size: {{ size }}</p>
+                        <form action="/heroform/new" >
+                            <button class="btn btn-primary">Add a hero to your squad</button>
+                        </form>
+                    </div>
+
+
+                {{/each}}
+            {{else}}
+                <p>No Squad!</p>
+
+            {{/if}}
+        </div>
+        <!--    <div class="col-md-6">-->
+        <!--        <h1>Hero list!</h1>-->
+            <!--        {{#if heroes}}-->
+            <!--            {{#each heroes}}-->
+            <!--                <div class="card">-->
+            <!--                    {{squadName}} Heroes-->
+            <!--                    <p>Current squad</p>-->
+            <!--                    <p>Name: {{ name }}</p>-->
+            <!--                    <p>Age: {{ age }}</p>-->
+            <!--                    <p>Special power: {{ specialPower }}</p>-->
+            <!--                    <p>Weakness: {{ weakness }}</p>-->
+            <!--                </div>-->
+
+                <!--            {{/each}}-->
+            <!--        {{else}}-->
+        <!--            <p>No Heroes!</p>-->
+
+            <!--        {{/if}}-->
+        <!--    </div>-->
+
+
+    </div>
+{{/partial}}
+{{> layout.hbs}}

@@ -1,0 +1,33 @@
+
+{{#partial "content"}}
+    <div class="container">
+        <div class="row">
+    <div class="col-md-5">
+
+    </div>
+    <div class="col-md-6">
+        <h1>Hero list!</h1>
+        {{#if heroes}}
+            {{#each heroes}}
+                <div class="card">
+                    <div class="card-header">
+                        {{squadName}} Heroes
+                    </div>
+                    <div class="card-body">
+                        <p>Name: {{ name }}</p>
+                        <p>Age: {{ age }}</p>
+                        <p>Special power: {{ specialPower }}</p>
+                        <p>Weakness: {{ weakness }}</p>
+                    </div>
+                </div>
+            {{/each}}
+        {{else}}
+            <p>No Heroes!</p>
+
+        {{/if}}
+    </div>
+        </div>
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}
