@@ -7,6 +7,10 @@
     <groupId>com.moringa.javaTrack</groupId>
     <artifactId>Hero-Squad</artifactId>
     <version>1.0</version>
+    <properties>
+        <maven.compiler.source>6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <!-- We need to list out ALL dependencies our project needs. If you have dependencies not listed here, but sure to add them -->
@@ -35,21 +39,11 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
+            <version>4.12</version>
         </dependency>
     </dependencies>
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>

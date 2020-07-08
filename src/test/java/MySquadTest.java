@@ -17,12 +17,12 @@ public class MySquadTest  {
     @Test
     public void getsSquadName() {
         MySquad squad = new MySquad(10,"Justice League", "Fight Crime");
-        assertEquals(10, squad.getSquadName());
+        assertEquals("Justice League", squad.getSquadName());
     }
     @Test
     public void getsSquadPurpose() {
         MySquad squad = new MySquad(10,"Justice League", "Fight Crime");
-        assertEquals(10, squad.getPurpose());
+        assertEquals("Fight Crime", squad.getPurpose());
     }
     @Test
     public void getsId() {
@@ -45,7 +45,7 @@ public class MySquadTest  {
     @Test
     public void findReturnsCorrectHeroWhenMoreThanOneHeroExists() {
         MySquad group2 = new MySquad(5, "Night Savers", "Fight corruption");
-        assertEquals(2, MySquad.findById(group2.getId()).getId());
+        assertEquals(1, MySquad.findById(group2.getId()).getId());
     }
 
 }
